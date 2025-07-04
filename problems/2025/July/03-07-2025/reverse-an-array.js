@@ -1,34 +1,34 @@
 // Reverse an Array
 arr = [5, 3, 1, 2, 4];
 
-// reversed_array = [];
+reversed_array = [];
 
-// for (i = arr.length - 1; i >= 0; i--) {
-//     console.log(i);
-//     reversed_array.push(arr[i]);
-// }
+for (i = arr.length - 1; i >= 0; i--) {
+    console.log(i);
+    reversed_array.push(arr[i]);
+}
 
-// console.log(reversed_array);
+console.log(reversed_array);
 
-// Method#2
+//Method#2
 
 //using two pointers -> take two pointer 
 
-// let l = 0; r = arr.length - 1;
+let l = 0; r = arr.length - 1;
 
-// console.log(l, r);
+console.log(l, r);
 
-// while (l < r) {
+while (l < r) {
 
-//     let temp = arr[l];
-//     arr[l] = arr[r];
-//     arr[r] = temp;
+    let temp = arr[l];
+    arr[l] = arr[r];
+    arr[r] = temp;
 
-//     l++;
-//     r--
-// }
+    l++;
+    r--
+}
 
-// console.log(arr)
+console.log(arr)
 
 //Method#3
 /*
